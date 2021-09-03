@@ -18,7 +18,7 @@ jobs:
         run: |
           set -e
           wget -q -O webots.deb https://github.com/cyberbotics/webots/releases/download/R2021b/webots_2021b_amd64.deb
-          sudo apt install ./webots.deb
+          sudo apt install -y -qq ./webots.deb
           rm -f webots.deb
       - uses: actions/checkout@v2
       - name: Cargo Cache
