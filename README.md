@@ -21,9 +21,13 @@ To make changes to the controller, you can edit `src/main.rs` and then run `make
 
 At compile time, I use [bindgen](https://github.com/rust-lang/rust-bindgen) to convert a list of Webots C header files (see `wrapper.h`) into Rust structures and types. Those types form a bridge between the Rust-based controller code and the Webots C library that does the hard work of interacting with the simulation engine. See `build.rs` and `bindings.rs` for more details.
 
+## Contributing
+
+Improvements are welcome. If you have an idea, please open an issue so that we can discuss it.
+
 ## TODO
 
-- Improve API safety. While any of the Webots C functions can be called from Rust, many are marked as `unsafe` due to raw pointer usage. I have started wrapping a few of them in Rust functions (see `lib.rs`), but this approach doesn't scale very well given the size of the API. Improvements are welcome -- please open an issue if you have an idea.
+- Improve API safety. While any of the Webots C functions can be called from Rust, many are marked as `unsafe` due to raw pointer usage. I have started wrapping a few of them in Rust functions (see `lib.rs`), but this approach doesn't scale very well given the size of the API.
 - More example controllers
 - Resolve "not FFI-safe" warnings somehow
 
