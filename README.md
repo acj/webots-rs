@@ -25,6 +25,7 @@ At compile time, I use [bindgen](https://github.com/rust-lang/rust-bindgen) to c
 
 - Improve API safety. While any of the Webots C functions can be called from Rust, many are marked as `unsafe` due to raw pointer usage. I have started wrapping a few of them in Rust functions (see `lib.rs`), but this approach doesn't scale very well given the size of the API. Improvements are welcome -- please open an issue if you have an idea.
 - More example controllers
+- Resolve "not FFI-safe" warnings somehow
 
 ## License
 
