@@ -3,6 +3,7 @@ all: build
 .PHONY: build
 build:
 	cargo build
+	mkdir -p sample_project/controllers/rust_controller/rust_controller
 	cp target/debug/webots-rs sample_project/controllers/rust_controller/rust_controller
 
 	@echo
@@ -11,4 +12,4 @@ build:
 .PHONY: clean
 clean:
 	cargo clean
-	rm -f sample_project/controllers/rust_controller/rust_controller
+	rm -rf sample_project/controllers/rust_controller/
