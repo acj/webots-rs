@@ -1,11 +1,16 @@
-#VRML_SIM R2021b utf8
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
 WorldInfo {
-  basicTimeStep 16
-  coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.7139816212143648 0.6498863106822301 0.2605341201377416 0.999556876020076
-  position 1.291235709525418 1.7469413024314513 1.4570345511964897
+  orientation -0.5815306848992189 0.57703964937335 0.5734520952718951 2.108653537662431
+  position 0.13715841637250828 0.09886616269012785 1.2338366189560475
 }
 TexturedBackground {
 }
@@ -16,38 +21,18 @@ RectangleArena {
   wallHeight 0.05
 }
 WoodenBox {
-  translation -0.2 0.05 0.15418
-  rotation 0 -1 0 0.3468
+  translation -0.365046 0.381129 0.05
   size 0.1 0.1 0.1
-  mass 0.2
 }
 WoodenBox {
-  translation -0.2923 0.05 -0.3406
-  rotation 0 -1 0 0.3468
-  name "wooden box(1)"
-  size 0.1 0.1 0.1
-  mass 0.2
-}
-WoodenBox {
-  translation 0.2296 0.05 -0.2316
-  rotation 0 -1 0 0.34688418883387256
+  translation -0.365046 -0.358871 0.05
   name "wooden box(2)"
   size 0.1 0.1 0.1
-  mass 0.2
 }
 WoodenBox {
-  translation 0.1 0.05 0.2
-  rotation 0 -1 0 0.34688418883387256
-  name "wooden box(3)"
+  translation 0.394954 0.381129 0.05
+  name "wooden box(1)"
   size 0.1 0.1 0.1
-  mass 0.2
-}
-WoodenBox {
-  translation 0.35 0.05 0.2
-  rotation 0 -1 0 0.34688418883387256
-  name "wooden box(4)"
-  size 0.1 0.1 0.1
-  mass 0.2
 }
 E-puck {
   controller "rust_controller"
