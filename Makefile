@@ -3,7 +3,7 @@ all: build
 .PHONY: build
 build:
 	cargo build
-	mkdir -p sample_project/controllers/rust_controller/rust_controller
+	mkdir -p sample_project/controllers/rust_controller/
 	cp target/debug/webots-rs sample_project/controllers/rust_controller/rust_controller
 
 	@echo
