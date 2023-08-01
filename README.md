@@ -19,7 +19,7 @@ To make changes to the controller, you can edit `src/main.rs` and then run `make
 
 ## How this works
 
-At compile time, I use [bindgen](https://github.com/rust-lang/rust-bindgen) to convert a list of Webots C header files (see `wrapper.h`) into Rust structures and types. Those types form a bridge between the Rust-based controller code and the Webots C library that does the hard work of interacting with the simulation engine. See `build.rs` and `bindings.rs` for more details.
+At compile time, I use [bindgen](https://github.com/rust-lang/rust-bindgen) to convert a list of Webots C header files (see `wrapper.h`) into Rust structures and types. Those types form a bridge between the Rust-based controller code and the Webots C library that does the hard work of interacting with the simulation engine. See `build.rs` for more details.
 
 ## Contributing
 
