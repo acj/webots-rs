@@ -12,4 +12,5 @@ build:
 .PHONY: clean
 clean:
 	cargo clean
+	rm -f src/bindings.rs
 	rm -rf sample_project/controllers/rust_controller/
