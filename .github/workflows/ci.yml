@@ -17,7 +17,7 @@ jobs:
       - name: Install Webots
         run: |
           set -e
-          wget -q -O webots.deb https://github.com/cyberbotics/webots/releases/download/R2023a/webots_2023a_amd64.deb
+          wget -q -O webots.deb https://github.com/cyberbotics/webots/releases/download/R2023b/webots_2023b_amd64.deb
           sudo apt install -y -qq ./webots.deb
           rm -f webots.deb
       - uses: actions/checkout@v4
